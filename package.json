@@ -5,22 +5,13 @@
     "license": "UNLICENSED",
     "type": "module",
     "scripts": {
-        "build": "tsc --watch",
-        "start": "node dist/index.js",
-        "dev": "rimraf dist && tsc && run-p build dev-start",
-        "dev-start": "nodemon dist/index.js",
-        "prepublish": "tsc"
+        "dev": "tsc && node dist/index.js"
     },
     "dependencies": {
         "i-have-a-dir-and-main": "^1.0.0"
     },
     "devDependencies": {
         "@types/node": "^20.17.16",
-        "eslint": "^8.57.1",
-        "eslint-config-sandi-ts": "^0.1.13",
-        "nodemon": "^3.1.9",
-        "npm-run-all": "^4.1.5",
-        "rimraf": "^5.0.10",
         "typescript": "^5.7.3"
     }
 }
